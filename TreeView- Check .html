@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree View Check</title> 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+
+    <h1> Tree View Check</h1>
+    <p>
+        Busca casi por todos los Sitios y repositorios algo similar a mis necesidades pero no encontre. <br>
+        Solo usando javascript.
+
+    </p>
+    <p>
+        Espero Pueda Servirles a Muchos. Agradesco su aportes y mejoras a todos aquellos que les sea de utiliza este
+        pequeno aporte.
+    </p>
+    <p> Armando Pisfil: @armandoaepp</p>
+
+
+    <div class="col-12 text-end">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnAccordionToggle" id="btnAccordionToggle1" autocomplete="off"
+                onclick="togglExpandedTreeview('+')">
+            <label class="btn btn-outline-primary" for="btnAccordionToggle1">Expandir</label>
+
+            <input type="radio" class="btn-check" name="btnAccordionToggle" id="btnAccordionToggle3" autocomplete="off"
+                onclick="togglExpandedTreeview('-')">
+            <label class="btn btn-outline-primary" for="btnAccordionToggle3">Contraer</label>
+        </div>
+    </div>
+
+    <ul class="tree-check" data-parent="tree-view">
+
+        <li class="li-check">
+            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+            <label class="label-check">
+                <input class="check-item form-check-input" type="checkbox">
+                Level 1 children
+            </label>
+            <ul class="tree-check">
+                <li class="li-check">
+                    <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                    <label class="label-check">
+                        <input class="check-item form-check-input" type="checkbox">
+                        Level 1
+                    </label>
+                </li>
+                <li class="li-check">
+                    <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                    <label class="label-check">
+                        <input class="check-item form-check-input" type="checkbox">
+                        Level 2 children
+                    </label>
+                    <ul class="tree-check">
+                        <li class="li-check">
+                            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                            <label class="label-check">
+                                <input class="check-item form-check-input" type="checkbox">
+                                Level 1
+                            </label>
+                        </li>
+
+                        <li class="li-check">
+                            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                            <label class="label-check">
+                                <input class="check-item form-check-input" type="checkbox">
+                                Level 1
+                            </label>
+                        </li>
+                        <li class="li-check">
+                            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                            <label class="label-check">
+                                <input class="check-item form-check-input" type="checkbox">
+                                Level 3 children
+                            </label>
+                            <ul class="tree-check">
+                                <li class="li-check">
+                                    <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                                    <label class="label-check">
+                                        <input class="check-item form-check-input" type="checkbox">
+                                        Level 1
+                                    </label>
+                                </li>
+
+                                <li class="li-check">
+                                    <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                                    <label class="label-check">
+                                        <input class="check-item form-check-input" type="checkbox">
+                                        Level 1
+                                    </label>
+                                    <ul class="tree-check">
+                                        <li class="li-check">
+                                            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                                            <label class="label-check">
+                                                <input class="check-item form-check-input" type="checkbox">
+                                                Level 1
+                                            </label>
+                                        </li>
+
+                                        <li class="li-check">
+                                            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                                            <label class="label-check">
+                                                <input class="check-item form-check-input" type="checkbox">
+                                                Level 1
+                                            </label>
+                                        </li>
+                                        <li class="li-check">
+                                            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                                            <label class="label-check">
+                                                <input class="check-item form-check-input" type="checkbox">
+                                                Level 1
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="li-check">
+                                    <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                                    <label class="label-check">
+                                        <input class="check-item form-check-input" type="checkbox">
+                                        Level 1
+                                    </label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="li-check">
+                    <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                    <label class="label-check">
+                        <input class="check-item form-check-input" type="checkbox">
+                        Level 1
+                    </label>
+                </li>
+            </ul>
+
+        </li>
+
+        <li class="li-check">
+            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+            <label class="label-check">
+                <input class="check-item form-check-input" type="checkbox">
+                Level 1
+            </label>
+            <ul class="tree-check">
+
+                <li class="li-check">
+                    <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                    <label class="label-check">
+                        <input class="check-item form-check-input" type="checkbox">
+                        Level 1
+                    </label>
+                    <ul class="tree-check">
+                        <li class="li-check">
+                            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                            <label class="label-check">
+                                <input class="check-item form-check-input" type="checkbox">
+                                Level 1
+                            </label>
+                        </li>
+
+                        <li class="li-check">
+                            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                            <label class="label-check">
+                                <input class="check-item form-check-input" type="checkbox">
+                                Level 1
+                            </label>
+                        </li>
+                        <li class="li-check">
+                            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                            <label class="label-check">
+                                <input class="check-item form-check-input" type="checkbox">
+                                Level 1
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="li-check">
+                    <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                    <label class="label-check">
+                        <input class="check-item form-check-input" type="checkbox">
+                        Level 1
+                    </label>
+                </li>
+                <li class="li-check">
+                    <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+                    <label class="label-check">
+                        <input class="check-item form-check-input" type="checkbox">
+                        Level 1
+                    </label>
+                </li>
+            </ul>
+        </li>
+
+        <li class="li-check">
+            <button class="btn btn-outline-dark btn-sm btn-tw-icon"></button>
+            <label class="label-check">
+                <input class="check-item form-check-input" type="checkbox">
+                Level 1
+            </label>
+        </li>
+
+    </ul>
+
+    <script>
+        var checks = document.querySelectorAll(".check-item");
+
+        for (var i = 0; i < checks.length; i++) {
+            checks[i].addEventListener('change', function () {
+
+                parentSublingChecks(this);
+                childrenChekeds(this);
+            });
+        }
+
+        function parentSublingChecks(elm) {
+
+            // BUSQUEDAS HACIA ARRIBA Y HERMANOS DE ELEMENTO
+            // -------------------------------------------------------------
+
+            // BUSCAMOS ELEMENTO PADRE 
+            const pN = elm.closest(".tree-check");
+            //  ELEMENTOS (todos los li-check)
+            var li_checks_subligns = pN.children;
+
+            // LOS HERMANOS DEL CHECK SELECCIONADO 
+            // ------------------------------------------------
+            let count_checked_subling = 0;
+            let siblings = [];
+            for (let i = 0; i <= li_checks_subligns.length - 1; i++) {
+                let check_item = li_checks_subligns[i].querySelector('.check-item');
+                console.log(check_item);
+
+                if (check_item === elm) {
+                    continue;
+                }
+                if (check_item.checked) {
+                    count_checked_subling++;
+                }
+                siblings[siblings.length] = check_item;
+            }
+            // ------------------------------------------------
+
+            //  ELEMENTOS PADRE INMEDIATO DE elm (label-check)
+            // ------------------------------------------------
+            if (count_checked_subling == 0) { // si almenos un hermano esta chekado ya no buscano al padre
+                let label_check = pN.previousElementSibling;
+                if (label_check) {
+                    let antecesor = label_check.querySelector('.check-item');
+                    if (antecesor) {
+                        if (elm.checked) {
+                            antecesor.checked = true;
+                        } else {
+                            antecesor.checked = false;
+                        }
+                        parentSublingChecks(antecesor);
+                    }
+                }
+            }
+            // ------------------------------------------------
+        }
+
+        function childrenChekeds(elm) {
+
+            // BUSQUEDAS BUSQUEDAS DE HIJOS
+            // -------------------------------------------------------------
+
+            // BUSCAMOS ELEMENTO PADRE DEL ELEMNTO 
+            let parent_node = elm.closest(".label-check");
+            let tree_check = parent_node.nextElementSibling;
+
+            if (tree_check) {
+                let children_check = tree_check.querySelectorAll('.check-item');
+
+                // recoremos todos los hijos CHECKEDs o DESCHESKDs
+                // ------------------------------------------------
+                for (let i = 0; i <= children_check.length - 1; i++) {
+                    let check_item = children_check[i];
+                    if (elm.checked) {
+                        check_item.checked = true;
+                    } else {
+                        check_item.checked = false;
+
+                    }
+                }
+            }
+            // ------------------------------------------------
+        }
+
+        // -------------------------------------------------------
+        // BOTONES 
+        // -------------------------------------------------------
+        var btns_icon = document.querySelectorAll(".btn-tw-icon");
+
+        for (var i = 0; i < btns_icon.length; i++) {
+            isChildrenByBtn(btns_icon[i])
+            btns_icon[i].addEventListener('click', function () {
+                toogleVisibleChildren(this);
+            });
+        }
+
+        function toogleVisibleChildren(btn_icon) {
+            console.log(btn_icon);
+            // verificar si esta activo
+            // -------------------------------------------------------------
+            let is_active_btn = btn_icon.classList.contains("is-active");
+
+            // BUSCAMOS el li padre 
+            let li_check_by_btn = btn_icon.closest(".li-check");
+
+            if (li_check_by_btn) {
+                let ul_tree = li_check_by_btn.querySelector('.tree-check');
+                if (ul_tree) {
+                    if (is_active_btn) {
+                        ul_tree.classList.remove('list-visible');
+                    } else {
+                        ul_tree.classList.add('list-visible');
+                    }
+                }
+            }
+
+            if (is_active_btn) {
+                btn_icon.classList.remove('is-active');
+            } else {
+                btn_icon.classList.add('is-active');
+            }
+            // ------------------------------------------------
+        }
+
+        // DES-HABILITAR botones que no tienes hijos 
+        // -------------------------------------------------------------
+        function isChildrenByBtn(btn_icon) {
+
+            // BUSCAMOS el li padre 
+            let li_check_by_btn = btn_icon.closest(".li-check");
+
+            if (li_check_by_btn) {
+                let ul_tree = li_check_by_btn.querySelector('.tree-check');
+                if (!ul_tree) {
+                    btn_icon.disabled = true;
+                }
+            }
+            // ------------------------------------------------
+        }
+
+
+        // -------------------------------------------------------
+        // BOTONES EXPANDIR or CONTRAER
+        // -------------------------------------------------------
+        /*  
+        setTimeout(() => {
+                    var btn_activated = document.querySelectorAll(".btn-tw-icon:not([disabled])");
+                    console.log(btn_activated);
+                }, 2000); 
+                */
+
+        function togglExpandedTreeview(is_state) {
+
+            var btn_activated = document.querySelectorAll(".btn-tw-icon:not([disabled])");
+            console.log(btn_activated);
+
+            for (let i = 0; i < btn_activated.length; i++) {
+                let btn_item = btn_activated[i];
+                let li_parent = btn_item.closest('.li-check');
+
+                if (is_state == '+') {
+                    if (li_parent) {
+                        let ul_tree = li_parent.querySelector('.tree-check');
+                        if (ul_tree) {
+                            ul_tree.classList.add('list-visible');
+                        }
+                        btn_item.classList.add('is-active');
+                    }
+                } else {
+                    if (li_parent) {
+                        let ul_tree = li_parent.querySelector('.tree-check');
+                        if (ul_tree) {
+                            ul_tree.classList.remove('list-visible');
+                        }
+                        btn_item.classList.remove('is-active');
+                    }
+                }
+
+            }
+        }
+
+    </script>
+
+
+    <style>
+        .tree-check {
+            padding-left: 0;
+            list-style: none;
+            margin-left: 1.5rem;
+        }
+
+        .tree-check .label-check .check-item {
+            margin-right: .5rem;
+        }
+
+        .tree-check .li-check {
+            position: relative;
+        }
+
+        .tree-check ul.tree-check {
+            display: none;
+        }
+
+        .tree-check ul.tree-check.list-visible {
+            display: block;
+        }
+
+        .btn-tw-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 3px;
+            left: -24px;
+        }
+
+        .btn-tw-icon::before {
+            content: "+";
+        }
+
+        .btn-tw-icon.is-active::before {
+            content: "-";
+        }
+
+        .btn-tw-icon:disabled,
+        .btn-tw-icon[disabled] {
+            border: 1px solid #999999;
+            background-color: #cccccc;
+            color: #999999;
+        }
+
+
+
+
+        /* .tree-check .li-check::before {
+            content: "+";
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            border: 1px solid #ccc;
+            left: -20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 5px;
+        } */
+
+    </style>
+
+</body>
+
+</html>
